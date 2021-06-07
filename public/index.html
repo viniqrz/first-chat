@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="nickname-form-container">
+        <form class="nickname-form">
+          <input
+            id="nickname-input"
+            type="text"
+            required
+            placeholder="Nickname"
+          />
+          <button id="save-nickname" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+    <div class="chat-container">
+      <ul id="messages"></ul>
+      <form id="form" action="">
+        <input id="input" type="text" maxlength="50" autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
